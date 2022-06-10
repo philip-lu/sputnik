@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Sputnik</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            display: block;
+            color: text;
+            background-image: url("http://radiosputnik.nl/assets/images/body_5.jpg");
+            background-size: cover;
+        }
+        body {
+            background-color: rgb(38, 38, 38);
+            display: block;
+            margin-top: 8px;
+        }
+        .player {
+            width: 650px !important;
+            position: absolute;
+            top: 50%;
+            left:calc(50% - 325px);
+        }
+        .controls {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <audio controls autoplay id="myaudio" class="controls">
+            <source src="http://www.radiosputnik.nl:8002/">
+        </audio>
+    </div>
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.4;
+      </script>
+</body>
+</html>
