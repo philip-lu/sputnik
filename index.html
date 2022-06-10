@@ -34,10 +34,11 @@
 </head>
 <body>
     <div class="player">
-        <audio autoplay controls id="myaudio" class="controls">
+        <audio autoplay allow="autoplay" controls id="myaudio" class="controls">
             <source src="http://www.radiosputnik.nl:8002/">
         </audio>
     </div>
+     <iframe src="http://www.radiosputnik.nl:8002/" allow="autoplay" id="iframeAudio"></iframe>
     <script>
         var audio = document.getElementById("myaudio");
         audio.volume = 0.4;
