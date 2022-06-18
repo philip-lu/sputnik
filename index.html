@@ -71,7 +71,13 @@
             <audio controls id="nightride" class="controls">
                 <source src="https://stream.nightride.fm/nightride.m4a">
             </audio>
-        </div>
+        </div>       
+        <div>
+            <h3>Atmospherix & Liquid DnB (Innersence Radio)</h3>
+            <audio controls id="atmdnb" class="controls">
+                <source src=" http://hubble.shoutca.st:8004/stream">
+            </audio>
+        </div>     
         <div>
             <h3>NTS London</h3>
             <audio controls id="ntslondon" class="controls">
@@ -100,6 +106,8 @@
         retrowaveone.volume = 0.4;
         var nightride = document.getElementById("nightride");
         nightride.volume = 0.5;
+        var atmdnb = document.getElementById("atmdnb");
+        atmdnb.volume = 0.5;
         var ntslondon = document.getElementById("ntslondon");
         ntslondon.volume = 0.5;
     </script>
@@ -116,5 +124,4 @@
     </script>
     
 </body>
-
 </html>
